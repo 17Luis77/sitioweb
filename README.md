@@ -2,11 +2,11 @@
 
 Este proyecto consiste en el desarrollo de una página web tipo landing page para un producto ficticio: los auriculares AstroX S1.
 
-## 📌 Descripción
+## Descripción
 
 La página presenta información sobre el producto, sus características principales y una comparación con otros modelos del mercado. Además, incluye secciones informativas y un formulario de contacto.
 
-## 🧩 Estructura del proyecto
+## Estructura del proyecto
 
 - index.html → Página principal
 - nosotros.html → Información sobre la empresa
@@ -14,23 +14,23 @@ La página presenta información sobre el producto, sus características princip
 - style.css → Estilos de la página
 - img/ → Imágenes utilizadas
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - HTML5
 - CSS3
 
-## 📱 Características
+## Características
 
 - Diseño responsive (adaptado a celular y PC)
 - Uso de Flexbox para la distribución de elementos
 - Tabla comparativa de productos
 - Formulario de contacto
 
-## 🎯 Objetivo
+## Objetivo
 
 Aplicar conocimientos básicos de desarrollo web utilizando HTML y CSS para crear una página funcional y organizada.
 
-## 👤 Autor
+## Autor
 
 - Luis Condori
 - ROL: Desarrollo de la wwb
