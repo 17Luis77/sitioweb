@@ -55,6 +55,22 @@ body {
     margin-bottom: 20px;
 }
 
+.hero-img {
+    width: 500px;
+    max-width: 90%;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+.hero button {
+    display: block;
+    margin: 20px auto;
+}
+
 /* BOTÓN */
 button {
     background-color: #00aaff;
@@ -103,6 +119,11 @@ button:hover {
 /* 📱 RESPONSIVE */
 @media (max-width: 768px) {
 
+    .valores {
+    flex-direction: column;
+    align-items: center;
+    }
+
     .header {
         flex-direction: column;
     }
@@ -128,54 +149,86 @@ button:hover {
         .hero-img {
             width: 300px;
     }
- 
+    
+
 }
 
-.comparacion {
-    padding: 60px 20px;
+.seccion-producto {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+    position: relative;
+
+    background-color: #0f0f0f; /* mismo color que el body */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0 20px 40px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-/* CAJA GRANDE */
-.tabla-container {
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 900px;
-    margin: 30px auto;
-    overflow-x: auto;
+
+.seccion-producto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
 }
 
-/* TABLA */
-table {
-
-    width: 100%;
-    border-collapse: collapse;
+.contenido-producto {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
 }
 
-th, td {
-    padding: 15px;
-    border-bottom: 1px solid #333;
+.contenido-producto h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-th {
-    color: #00aaff;
-}
-.hero-img {
-    width: 500px;
-    max-width: 90%;
-    margin-top: 30px;
-    transition: 0.3s;
+.contenido-producto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d0d0d0;
 }
 
-.hero-img:hover {
-    transform: scale(1.05);
+/* Imágenes de fondo */
+.sonido {
+    background-image: url("img/sonido.png");
 }
 
-.hero button {
-    display: block;
-    margin: 20px auto;
+
+.bateria {
+    background-image: url("img/bateria.png");
 }
+
+
+.diseno {
+    background-image: url("img/estructura.png");
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido-producto h2 {
+        font-size: 2.2rem;
+    }
+
+    .contenido-producto p {
+        font-size: 1rem;
+    }
+
+    .seccion-producto {
+        height: 80vh;
+    }
+}
+
+
 /* NOSOTROS */
 .nosotros {
     text-align: center;
@@ -217,14 +270,5 @@ th {
 }
 
 .formulario button {
-    background-color: #00aaff;
-    border: none;
     padding: 10px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.formulario button:hover {
-    background-color: #0088cc;
 }
