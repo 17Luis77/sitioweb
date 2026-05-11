@@ -4,7 +4,7 @@ Este proyecto consiste en el desarrollo de una página web tipo landing page par
 
 ## Descripción
 
-La página presenta información sobre el producto, sus características principales y una comparación con otros modelos del mercado. Además, incluye secciones informativas y un formulario de contacto.
+La página presenta información sobre el producto, sus características principales e incluye secciones informativas y un formulario de contacto.
 
 ## Estructura del proyecto
 
@@ -23,7 +23,6 @@ La página presenta información sobre el producto, sus características princip
 
 - Diseño responsive (adaptado a celular y PC)
 - Uso de Flexbox para la distribución de elementos
-- Tabla comparativa de productos
 - Formulario de contacto
 
 ## Objetivo
