@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/png" href="img/icono.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - AstroX</title>
@@ -23,12 +24,13 @@
         <h2>Contáctanos</h2>
         <p>Dejanos tu consulta y te responderemos pronto.</p>
 
-        <form class="formulario">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+       <form class="formulario" id="formulario-contacto" action="https://formspree.io/f/xpqewzne" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+    <p id="mensaje-contacto"></p>
+    </form>
     </section>
 
 </main>
@@ -36,6 +38,8 @@
 <footer class="footer">
     <p>© 2026 AstroX </p>
 </footer>
+
+<script src="boton.js"></script>
 
 </body>
 </html>
