@@ -512,3 +512,22 @@ button:hover,
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 480px) {
+    .incluye-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .pantalla-exito h2 {
+        font-size: 2rem;
+    }
+
+    .contenido-producto h2 {
+        font-size: 1.8rem;
+    }
+}
