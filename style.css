@@ -513,21 +513,37 @@ button:hover,
     }
 }
 
-@media (max-width: 480px) {
-    .incluye-grid {
-        grid-template-columns: 1fr;
+@media (orientation: landscape) and (max-height: 500px) {
+    .header {
+        padding: 12px 30px;
     }
 
-    .nav a {
-        display: inline-block;
-        margin: 5px 8px;
+    .hero {
+        min-height: auto;
+        padding: 30px 20px 50px;
     }
 
-    .pantalla-exito h2 {
+    .hero h2 {
         font-size: 2rem;
     }
 
-    .contenido-producto h2 {
-        font-size: 1.8rem;
+    .hero p {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-img {
+        width: 260px;
+        max-height: 38vh;
+        object-fit: contain;
+        margin: 15px auto 0;
+    }
+
+    .hero .boton-link {
+        margin: 15px auto 25px;
+    }
+
+    .features {
+        padding-top: 30px;
     }
 }
