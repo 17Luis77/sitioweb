@@ -224,32 +224,121 @@ button:hover,
 /* CONTACTO */
 .contacto {
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.75)
+    ), url("img/fondoContacto17.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
+    max-width: 420px;
     margin: 30px auto;
+    background-color: rgba(26, 26, 26, 0.85);
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .formulario input,
 .formulario textarea {
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
 }
 
 .formulario button {
-    padding: 10px;
+    padding: 12px;
 }
 
 #mensaje-contacto {
     margin-top: 15px;
     color: #00ff99;
     font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 0;
+}
+
+/* REDES DE CONTACTO */
+.redes-contacto {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.redes-contacto p {
+    margin-bottom: 15px;
+    color: #d0d0d0;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.iconos-redes a {
+    width: 65px;
+    height: 65px;
+    background-color: rgba(26, 26, 26, 0.85);
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.iconos-redes a:hover {
+    background-color: #00aaff;
+    transform: translateY(-5px);
+}
+
+.iconos-redes img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.contacto-secundario {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+.contacto-secundario p {
+    margin: 4px 0;
+}
+
+.icono-whatsapp {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contacto-secundario a {
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contacto-secundario a:hover {
+    color: #00aaff;
 }
 
 /* COMPRA */
@@ -513,3 +602,72 @@ button:hover,
     }
 }
 
+
+.ubicacion {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 30px auto;
+    max-width: 1300px;
+    background-color: transparent;
+}
+
+.mapa-ubicacion {
+    width: 90vw;
+    max-width: 1000px;
+    height: 380px;
+    margin: 25px auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.mapa-ubicacion iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .ubicacion {
+        padding: 35px 15px;
+    }
+
+    .mapa-ubicacion {
+        width: 100%;
+        height: 280px;
+        border-radius: 10px;
+    }
+
+    .btn-ubicacion {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.ubicacion {
+    text-align: center;
+    padding: 40px 20px 60px;
+    margin: 20px auto 30px;
+    max-width: 1300px;
+    background-color: transparent;
+}
+
+.valores {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px 20px;
+}
+
+
+.pagina-contacto .footer {
+    margin-top: 0;
+}
+
+.pagina-contacto main {
+    margin: 0;
+    padding: 0;
+}
+
+.pagina-contacto .contacto {
+    min-height: calc(100vh - 140px);
+    margin: 0;
+}
